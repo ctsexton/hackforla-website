@@ -18,8 +18,11 @@
     "*.{json,css,scss}": ["prettier --write", "git add"]
   },
   "dependencies": {
+    "@nuxtjs/axios": "^4.5.2",
+    "ajv": "^6.5.1",
     "normalize.scss": "^0.1.0",
     "nuxt": "^1.0.0",
+    "nuxtent": "^1.4.1",
     "vue-smooth-scroll": "^1.0.13"
   },
   "devDependencies": {
