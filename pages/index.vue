@@ -80,13 +80,12 @@ div
         img(:src='contents.testimonial.image').quote-tmb
       h2 Press
       ul.news-cards.unstyled-list
-        //- each item in contents.press
-        //-   li.news-card
-        //-     .news-card-inner
-        //-       .news-body
-        //-         h4.news-title
-        //-           a(href=item.url) item.title
-        //-         p item.source
+        li.news-card(v-for='item in contents.press')
+          .news-card-inner
+            .news-body
+              h4.news-title
+              a(:href='item.url') {{ item.title }}
+              p item.source
 
   section#about.content-section.about
     .page-contain
